@@ -22,7 +22,6 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
   },
@@ -57,5 +56,11 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "chai": "^4.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "react-test-renderer": "^16.8.4"
+  }
 }

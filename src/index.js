@@ -1,22 +1,62 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
+export default class Snakke extends Component {
+  constructor(props) {
+    super(props)
+    this.setProgress = this.setProgress.bind(this)
+    this.getPercentageScroll = this.getPercentageScroll.bind(this)
   }
 
-  render() {
-    const {
-      text
-    } = this.props
+  state = {
+    progress: 0
+  }
 
+  styles = {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    width: '100%',
+    height: this.props.height,
+    opacity: this.props.opacity,
+    zIndex: this.props.zIndex,
+    background: `linear-gradient(to right, ${this.props.color} var(--scroll), transparent 0)`
+  }
+
+  getPercentageScroll (scrollPos) {
+    const bodyHeight = document.body.clientHeight - document.documentElement.clientHeight
+    return (scrollPos / bodyHeight) * 100
+  }
+
+  setProgress () {
+    let total = this.getPercentageScroll(window.scrollY)
+
+    if (total > 99) {
+      total = 100
+    }
+
+    if (total < 1) {
+      total = 0
+    }
+
+    this.setState({
+      progress: total
+    })
+  }
+
+  componentDidMount () {
+    window.addEventListener('scroll', this.setProgress)
+  }
+
+  render () {
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <div style={{"--scroll": `${this.state.progress}%`, ...this.styles }}></div>
     )
   }
+}
+
+Snakke.defaultProps = {
+  color: '#000',
+  height: '5px',
+  opacity: '1',
+  zIndex: '9999'
 }

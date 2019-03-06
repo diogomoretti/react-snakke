@@ -1,5 +1,19 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 2em;
   font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 2.5em;
 }
