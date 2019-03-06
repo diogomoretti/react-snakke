@@ -1,6 +1,6 @@
-# react-snakke
+# React Snakke
 
-> teste
+> Reading position indicator to React
 
 [![NPM](https://img.shields.io/npm/v/react-snakke.svg)](https://www.npmjs.com/package/react-snakke) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
