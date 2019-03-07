@@ -30,14 +30,6 @@ export default class Snakke extends Component {
   setProgress () {
     let total = this.getPercentageScroll(window.scrollY)
 
-    if (total > 99) {
-      total = 100
-    }
-
-    if (total < 1) {
-      total = 0
-    }
-
     this.setState({
       progress: total
     })
