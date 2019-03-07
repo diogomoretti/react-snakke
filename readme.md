@@ -20,6 +20,8 @@ yarn add react-snakke
 
 ## Usage
 
+#### default
+
 ```jsx
 import React, { Component } from 'react'
 
@@ -29,6 +31,22 @@ class Example extends Component {
   render () {
     return (
       <Snakke />
+    )
+  }
+}
+```
+
+#### with custom values
+
+```jsx
+import React, { Component } from 'react'
+
+import Snakke from 'react-snakke'
+
+class Example extends Component {
+  render () {
+    return (
+      <Snakke color="#f0f" height="3px" opacity=".8" zIndex="10" />
     )
   }
 }
