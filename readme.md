@@ -59,7 +59,7 @@ class Example extends Component {
 | color   | String | #000          | false    | Set progress bar background color |
 | height  | String | 5px           | false    | Set height of progress bar        |
 | opacity | String | 1             | false    | Set opacity from 0 to 1           |
-| zIndex  | String | 9999          | false    | Set value from 0 to 9999          |
+| zIndex  | String | 9999          | false    | Set value based to css z-index    |
 
 ## License
 
