@@ -1,6 +1,6 @@
-<h1 align="center">
+<p align="center">
   <img src="./logo.png" alt="React Snakke" width="500">
-</h1>
+</p>
 
 <p align="center">
   <a href="https://travis-ci.org/diogomoretti/react-snakke/builds"><img alt="Travis (.org)" src="https://img.shields.io/travis/diogomoretti/react-snakke.svg?style=for-the-badge"></a> <a href="https://www.npmjs.com/package/react-snakke"><img alt="npm" src="https://img.shields.io/npm/v/react-snakke.svg?style=for-the-badge"></a> <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=for-the-badge" alt="JavaScript Style Guide" /></a>
@@ -20,6 +20,8 @@ yarn add react-snakke
 
 ## Usage
 
+#### default
+
 ```jsx
 import React, { Component } from 'react'
 
@@ -29,6 +31,22 @@ class Example extends Component {
   render () {
     return (
       <Snakke />
+    )
+  }
+}
+```
+
+#### with custom values
+
+```jsx
+import React, { Component } from 'react'
+
+import Snakke from 'react-snakke'
+
+class Example extends Component {
+  render () {
+    return (
+      <Snakke color="#f0f" height="3px" opacity=".8" zIndex="10" />
     )
   }
 }
