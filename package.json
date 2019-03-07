@@ -1,7 +1,7 @@
 {
   "name": "react-snakke",
-  "version": "1.0.0",
-  "description": "Reading position indicator to React",
+  "version": "1.0.1",
+  "description": "Reading position indicator for React",
   "author": "diogomoretti",
   "license": "MIT",
   "repository": "diogomoretti/react-snakke",
