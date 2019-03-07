@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./logo.svg" alt="React Snakke" width="500">
+  <img src="./logo.png" alt="React Snakke" width="500">
 </h1>
 
 <p align="center">
