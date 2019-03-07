@@ -12,8 +12,8 @@ describe('Snakke', () => {
     shallow(<Snakke />)
   })
 
-  it('renders an `div`', () => {
+  it('renders an <div> with class `snakke-progress`', () => {
     const wrapper = shallow(<Snakke />)
-    expect(wrapper.find('div')).to.have.lengthOf(1)
+    expect(wrapper.find('.snakke-progress')).to.have.lengthOf(1)
   })
 })

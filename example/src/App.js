@@ -18,8 +18,8 @@ export default class App extends Component {
             </div>
           </div>
 
-          <span class="scroll-indicator">
-            <span class="scroll-indicator__line"></span>
+          <span className="scroll-indicator">
+            <span className="scroll-indicator__line"></span>
               Scroll
             </span>
         </header>
@@ -60,7 +60,7 @@ export default class App extends Component {
           <p>Donec vitae lorem quis turpis pellentesque pellentesque eu at neque. Cras ac finibus nulla. Nunc id rutrum dui. Praesent risus arcu, sollicitudin iaculis erat sed, sollicitudin finibus arcu. Proin metus justo, volutpat et blandit sit amet, consequat eget lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dapibus eu erat at fringilla. Ut hendrerit lorem ut libero lacinia, sodales blandit odio finibus. Phasellus molestie iaculis fermentum.</p>
           <p>Curabitur facilisis mollis gravida. Vestibulum velit turpis, dignissim et metus nec, luctus vehicula augue. Maecenas non mauris pulvinar, ultrices massa quis, egestas neque. Ut id tellus dui. Donec sagittis mauris et nisi feugiat, placerat lacinia est lacinia. Nullam lectus sem, pellentesque vulputate erat ut, maximus accumsan ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec posuere hendrerit sapien sed bibendum. Vivamus lobortis, nisl quis consequat vehicula, lacus tortor finibus diam, non interdum dolor urna nec lorem. </p>
 
-          <p className="end">End of the page ;)</p>
+          <p className="end">End of the pageName ;)</p>
         </div>
       </div>
     )
