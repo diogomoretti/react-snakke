@@ -39,6 +39,10 @@ export default class Snakke extends Component {
     window.addEventListener('scroll', this.setProgress)
   }
 
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.setProgress)
+  }
+
   render () {
     return (
       <div className='snakke-progress' style={{'--scroll': `${this.state.progress}%`, ...this.styles }}></div>
