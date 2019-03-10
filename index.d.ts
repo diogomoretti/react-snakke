@@ -25,6 +25,12 @@ interface Props {
      * @type {string}
      */
     zIndex?: string;
+    /**
+     * Progress bar with or without shadow
+     * Default value is false
+     * @type {boolean}
+     */
+    shadow?: boolean;
 }
 
 export default class Snakke extends Component<Props> {}

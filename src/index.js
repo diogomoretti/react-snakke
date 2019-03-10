@@ -19,6 +19,7 @@ export default class Snakke extends Component {
     height: this.props.height,
     opacity: this.props.opacity,
     zIndex: this.props.zIndex,
+    filter: this.props.shadow ? `drop-shadow(0 0 .1em ${this.props.color})` : 'none',
     background: `linear-gradient(to right, ${this.props.color} var(--scroll), transparent 0)`
   }
 
@@ -54,5 +55,6 @@ Snakke.defaultProps = {
   color: '#000',
   height: '5px',
   opacity: '1',
-  zIndex: '9999'
+  zIndex: '9999',
+  shadow: false
 }

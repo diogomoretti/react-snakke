@@ -46,7 +46,13 @@ import Snakke from 'react-snakke'
 class Example extends Component {
   render () {
     return (
-      <Snakke color="#f0f" height="3px" opacity=".8" zIndex="10" />
+      <Snakke
+        color="#f0f"
+        height="3px"
+        opacity=".8"
+        zIndex="10"
+        shadow={true}
+      />
     )
   }
 }
@@ -60,6 +66,7 @@ class Example extends Component {
 | height  | String | 5px           | false    | Set height of progress bar        |
 | opacity | String | 1             | false    | Set opacity from 0 to 1           |
 | zIndex  | String | 9999          | false    | Set value based on css z-index property    |
+| shadow  | Boolean | false          | false    | Progress bar with or without shadow    |
 
 ## License
 
