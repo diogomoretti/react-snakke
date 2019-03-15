@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
+import { defaultProps } from './common'
 
 export default class Snakke extends Component {
+  static defaultProps = defaultProps
+
   constructor(props) {
     super(props)
     this.setProgress = this.setProgress.bind(this)
@@ -19,16 +22,21 @@ export default class Snakke extends Component {
     height: this.props.height,
     opacity: this.props.opacity,
     zIndex: this.props.zIndex,
-    filter: this.props.shadow ? `drop-shadow(0 0 .1em ${this.props.color})` : 'none',
-    background: `linear-gradient(to right, ${this.props.color} var(--scroll), transparent 0)`
+    filter: this.props.shadow
+      ? `drop-shadow(0 0 .1em ${this.props.color})`
+      : 'none',
+    background: `linear-gradient(to right, ${
+      this.props.color
+    } var(--scroll), transparent 0)`
   }
 
-  getPercentageScroll (scrollPos) {
-    const bodyHeight = document.body.clientHeight - document.documentElement.clientHeight
+  getPercentageScroll(scrollPos) {
+    const bodyHeight =
+      document.body.clientHeight - document.documentElement.clientHeight
     return (scrollPos / bodyHeight) * 100
   }
 
-  setProgress () {
+  setProgress() {
     let total = this.getPercentageScroll(window.scrollY)
 
     this.setState({
@@ -36,25 +44,22 @@ export default class Snakke extends Component {
     })
   }
 
-  componentDidMount () {
+  componentDidMount() {
     window.addEventListener('scroll', this.setProgress)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     window.removeEventListener('scroll', this.setProgress)
   }
 
-  render () {
+  render() {
     return (
-      <div className='snakke-progress' style={{'--scroll': `${this.state.progress}%`, ...this.styles }}></div>
+      <div
+        className='snakke-progress'
+        style={{ '--scroll': `${this.state.progress}%`, ...this.styles }}
+      />
     )
   }
 }
 
-Snakke.defaultProps = {
-  color: '#000',
-  height: '5px',
-  opacity: '1',
-  zIndex: '9999',
-  shadow: false
-}
+export * from './use-snakke'

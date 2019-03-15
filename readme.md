@@ -58,15 +58,28 @@ class Example extends Component {
 }
 ```
 
+#### As a hook
+
+```jsx
+import React from 'react'
+import { useSnakke } from 'react-snakke'
+
+function Example() {
+  useSnakke({ color: '#f0f', height: '5px' }) // totally optional
+
+  return <div style={{ height: '2000px' }}>A very long div...</div>
+}
+```
+
 ## Options / Props
 
-| Prop    | Type   | Default value | Required | Description                       |
-|---------|--------|---------------|----------|-----------------------------------|
-| color   | String | #000          | false    | Set progress bar background color |
-| height  | String | 5px           | false    | Set height of progress bar        |
-| opacity | String | 1             | false    | Set opacity from 0 to 1           |
-| zIndex  | String | 9999          | false    | Set value based on css z-index property    |
-| shadow  | Boolean | false          | false    | Progress bar with or without shadow    |
+| Prop    | Type    | Default value | Required | Description                             |
+| ------- | ------- | ------------- | -------- | --------------------------------------- |
+| color   | String  | #000          | false    | Set progress bar background color       |
+| height  | String  | 5px           | false    | Set height of progress bar              |
+| opacity | String  | 1             | false    | Set opacity from 0 to 1                 |
+| zIndex  | String  | 9999          | false    | Set value based on css z-index property |
+| shadow  | Boolean | false         | false    | Progress bar with or without shadow     |
 
 ## License
 
