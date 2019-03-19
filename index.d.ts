@@ -31,6 +31,12 @@ interface Props {
      * @type {boolean}
      */
     shadow?: boolean;
+    /**
+     * Set top position of progress bar
+     * Default value is 0px
+     * @type {boolean}
+     */
+    top?: string;
 }
 
 export default class Snakke extends Component<Props> {}
