@@ -29,7 +29,7 @@ export default class Snakke extends Component {
   }
 
   setProgress () {
-    let total = this.getPercentageScroll(window.scrollY)
+    const total = this.getPercentageScroll(window.scrollY)
 
     this.setState({
       progress: total
