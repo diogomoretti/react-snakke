@@ -48,6 +48,7 @@ class Example extends Component {
     return (
       <Snakke
         color="#f0f"
+        top="20px"
         height="3px"
         opacity=".8"
         zIndex="10"
