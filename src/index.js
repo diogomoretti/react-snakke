@@ -57,5 +57,5 @@ Snakke.defaultProps = {
   opacity: '1',
   zIndex: '9999',
   shadow: false,
-  top: '0px',
+  top: '0',
 }
