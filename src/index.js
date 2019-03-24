@@ -13,7 +13,7 @@ export default class Snakke extends Component {
 
   styles = {
     position: 'fixed',
-    top: '0',
+    top: this.props.top,
     left: '0',
     width: '100%',
     height: this.props.height,
@@ -56,5 +56,6 @@ Snakke.defaultProps = {
   height: '5px',
   opacity: '1',
   zIndex: '9999',
-  shadow: false
+  shadow: false,
+  top: '0',
 }
