@@ -11,10 +11,10 @@ export default class App extends Component {
 
         <header>
           <div className="header-content">
-            <img src="https://user-images.githubusercontent.com/2853428/53923774-33b04300-4058-11e9-869e-609617127781.png" />
+            <img alt="Logo React Snakke" src="https://user-images.githubusercontent.com/2853428/53923774-33b04300-4058-11e9-869e-609617127781.png" />
 
             <div className="button-wrapper">
-              <a className="button" href="https://github.com/diogomoretti/react-snakke" target="_blank">View on github</a>
+              <a className="button" href="https://github.com/diogomoretti/react-snakke" target="_blank" rel="noopener noreferrer">View on github</a>
             </div>
           </div>
 
