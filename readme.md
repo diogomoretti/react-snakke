@@ -23,39 +23,35 @@ yarn add react-snakke
 #### default
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
 import Snakke from 'react-snakke'
 
-class Example extends Component {
-  render () {
-    return (
-      <Snakke />
-    )
-  }
+export default function Example () {
+  return (
+    <Snakke />
+  )
 }
 ```
 
 #### with custom values
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
 import Snakke from 'react-snakke'
 
-class Example extends Component {
-  render () {
-    return (
-      <Snakke
-        color="#f0f"
-        top="20px"
-        height="3px"
-        opacity=".8"
-        zIndex="10"
-        shadow={true}
-      />
-    )
-  }
+export default function Example () {
+  return (
+    <Snakke
+      color='#f0f'
+      top='20px'
+      height='3px'
+      opacity='.8'
+      zIndex='10'
+      shadow
+    />
+  )
 }
 ```
 
