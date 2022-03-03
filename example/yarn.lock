@@ -6655,8 +6655,12 @@ react-scripts@^1.1.4:
     fsevents "^1.1.3"
 
 "react-snakke@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.2.3"
+  dependencies:
+    chai "^4.2.0"
+    enzyme "^3.9.0"
+    enzyme-adapter-react-16 "^1.10.0"
+    react-test-renderer "^16.8.4"
 
 react-test-renderer@^16.0.0-0, react-test-renderer@^16.8.4:
   version "16.8.4"
@@ -7980,9 +7984,9 @@ uri-js@^4.2.2:
     punycode "^2.1.0"
 
 urijs@^1.16.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
-  integrity sha512-xVrGVi94ueCJNrBSTjWqjvtgvl3cyOTThp2zaMaFNGp3F542TR6sM3f2o8RqZl+AwteClSVmoCyt0ka4RjQOQg==
+  version "1.19.9"
+  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.9.tgz#3b15844835de3732866d420768c16f24be7d3e65"
+  integrity sha512-v0V+v5F3NQFt6TX0GpA2NKyrpythDJI+PHRo66sUIDP/U6cXbm6NqLVcXylQGwiwW5VYNj+OAei3EU0ALj9AWg==
 
 urix@^0.1.0:
   version "0.1.0"
