@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/diogomoretti/react-snakke/builds"><img alt="Travis (.org)" src="https://img.shields.io/travis/diogomoretti/react-snakke.svg?style=for-the-badge"></a> <a href="https://www.npmjs.com/package/react-snakke"><img alt="npm" src="https://img.shields.io/npm/v/react-snakke.svg?style=for-the-badge"></a> <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=for-the-badge" alt="JavaScript Style Guide" /></a>
+   <a href="https://www.npmjs.com/package/react-snakke"><img alt="npm" src="https://img.shields.io/npm/v/react-snakke.svg?style=for-the-badge"></a> <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=for-the-badge" alt="JavaScript Style Guide" /></a>
 </p>
 
 ## Install
