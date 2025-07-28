@@ -10,12 +10,17 @@
 
 #### npm
 ```bash
-npm install --save react-snakke
+npm install react-snakke
 ```
 
 #### yarn
 ```bash
 yarn add react-snakke
+```
+
+#### pnpm
+```bash
+pnpm install react-snakke
 ```
 
 ## Usage
